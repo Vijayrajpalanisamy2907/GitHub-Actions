@@ -1,15 +1,14 @@
-Name : 01 - Building Blocks
-on : [push, workflow_dispatch]
+name: 01 - Building Blocks
+on: [push, workflow_dispatch]
 
 jobs:
-  
-  Name: echo-hello
-  runs-on: ubuntu-latest
-    steps :
-       -Name : Say hello
-          run : echo "Hello, World!"
-  Name: echo-goodbye
-  runs-on: ubuntu-latest
-    steps :
-       -Name : Say goodbye
-          run : echo "Goodbye, World!"  
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello, World!"
+  echo-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say goodbye
+        run: echo "Goodbye, World!"
