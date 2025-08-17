@@ -1,7 +1,6 @@
 name: 02 - Workflow Events
 on: push
-
- jobs:
+jobs:
    name : echo 
    runs-on: ubuntu-latest
     steps : 
