@@ -1,7 +1,8 @@
 name: 02 - Workflow Events
 on: push
 jobs:
-   name : echo 
-   runs-on: ubuntu-latest
-   steps : 
-       echo "Show the trigger"
+  echo:
+    name: Echo Job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Show the trigger"
